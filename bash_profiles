@@ -6,3 +6,12 @@
 if [ -f ~/.git-completion.bash  ]; then
     . ~/.git-completion.bash
 fi
+
+# set title to current dir
+PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
+
+export PATH=/usr/local/bin:$PATH
+export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
