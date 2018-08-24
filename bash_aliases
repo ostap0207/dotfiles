@@ -9,9 +9,10 @@ alias gc='git checkout'
 alias branches='sh ~/salemove/branches.sh'
 alias checkout_master='sh ~/salemove/checkout_master.sh'
 
+alias lc='colorls -lA --sd'
+
 # kubernetes
 alias kl=kubectl
-alias klcon='kubectl config use-context'
 
 # sublime text
 alias sbl='open -a /Applications/Sublime\ Text.app/'
