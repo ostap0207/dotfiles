@@ -9,3 +9,7 @@ tags
 !tags/
 tmp/**/*
 !tmp/cache/.keep
+# BEGIN ANSIBLE MANAGED BLOCK
+.DS_Store
+.DS_Store?
+# END ANSIBLE MANAGED BLOCK

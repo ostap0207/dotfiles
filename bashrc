@@ -10,3 +10,4 @@ export NVM_DIR="/Users/ostap/.nvm"
 function title {
     echo -ne "\033]0;"$*"\007"
 }
+export PATH="/Users/ostap/salemove/sm-configuration/bin:$PATH"

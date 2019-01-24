@@ -1,7 +1,7 @@
 [init]
   templatedir = ~/.git_template
 [push]
-  default = current
+	default = current
 [color]
   ui = auto
 [alias]
@@ -26,6 +26,7 @@
   editor = vim
 [merge]
   ff = only
+	conflictstyle = diff3
 [commit]
   template = ~/.gitmessage
 [fetch]

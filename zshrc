@@ -98,3 +98,4 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+export PATH="/Users/ostap/salemove/sm-configuration/bin:$PATH"
