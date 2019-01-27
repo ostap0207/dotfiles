@@ -7,4 +7,4 @@ source "${GITAWAREPROMPT}/main.sh"
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
 export PATH="$HOME/.asdf/shims:$PATH"
 
-export PS1="\W \[\$txtcyn\]\$git_branch\[\$txtred\]\$git_dirty\[\$txtrst\]\$ "
+export PS1="\u:\W \[\$txtgrn\]\$git_branch\[\$txtred\]\$git_dirty\[\$txtrst\]\$ "
