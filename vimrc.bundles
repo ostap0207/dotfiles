@@ -52,7 +52,8 @@ Plugin 'kchmck/vim-coffee-script'
 "
 Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline' "Awesome looking meta at bottom
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 
 """ Extras that I find useful
