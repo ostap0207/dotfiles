@@ -17,5 +17,8 @@ alias kl=kubectl
 # sublime text
 alias sbl='open -a /Applications/Sublime\ Text.app/'
 
+# atom
+alias atom='atom --new-window'
+
 # Include other aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
