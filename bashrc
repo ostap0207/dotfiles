@@ -11,3 +11,5 @@ function title {
     echo -ne "\033]0;"$*"\007"
 }
 export PATH="/Users/ostap/salemove/sm-configuration/bin:$PATH"
+
+set -o vi # Allow to edit command line using vim navigators
