@@ -1,7 +1,4 @@
-if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
-
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
@@ -14,13 +11,14 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
-
 source "$HOME/.bash_aliases"
-
-export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
-export PATH="$HOME/.asdf/shims:$PATH"
+export PATH="$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH"
 
 export PS1="\u: \[\$txtylw\]\W \[\$txtgrn\]\$git_branch\[\$txtred\]\$git_dirty\[\$txtrst\]\$ "
+export PATH="/usr/local/sbin:$PATH"
+eval "$(pyenv init -)"
+. $HOME/.asdf/asdf.sh
+export PATH="/Users/ostap/salemove/sm-configuration/bin:$PATH"
+[ -s "/Users/ostap/.nvm/nvm.sh" ] && . "/Users/ostap/.nvm/nvm.sh"
+export OTEL_TRACES_SAMPLER="parentbased_always_off"
+export OTEL_TRACES_EXPORTER="none"

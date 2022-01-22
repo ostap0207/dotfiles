@@ -60,6 +60,13 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+alias log='git log --oneline --graph -n 10'
+alias gcf='git commit --fixup'
+alias gras='git rebase -i --autosquash'
+alias gpom='git pull origin master'
+alias gpr='git pull --rebase origin master'
+alias gc='git checkout'
+
 # extra files in ~/.zsh/configs/pre , ~/.zsh/configs , and ~/.zsh/configs/post
 # these are loaded first, second, and third, respectively.
 _load_settings() {
